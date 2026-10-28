@@ -8,7 +8,9 @@ class AnnouncementCell: UITableViewCell {
 
     func configure(with announcement: CampusAnnouncement) {
         titleLabel.text = announcement.title
-        dateLabel.text = "\(announcement.category ?? "") • \(announcement.date ?? "")"
-        categoryIconImageView.image = UIImage(systemName: "megaphone.fill")
+        let loc = announcement.location ?? "Unknown Location"
+        let priority = announcement.priorityLevel ?? "Normal"
+        dateLabel.text =
+            "\(announcement.category ?? "") • \(loc) • Priority: \(priority)"
     }
 }

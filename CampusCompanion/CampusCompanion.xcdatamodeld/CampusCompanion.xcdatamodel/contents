@@ -3,6 +3,8 @@
     <entity name="CampusAnnouncement" representedClassName="CampusAnnouncement" syncable="YES" codeGenerationType="class">
         <attribute name="category" attributeType="String" defaultValueString=""/>
         <attribute name="date" attributeType="String" defaultValueString=""/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="priorityLevel" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String" defaultValueString=""/>
     </entity>
 </model>

@@ -1,8 +1,9 @@
-//
-//  AnnouncementDTO.swift
-//  CampusCompanion
-//
-//  Created by Geraldine Origenes on 10/21/26.
-//
-
 import Foundation
+
+struct AnnouncementDTO: Codable {
+    let title: String
+    let date: String
+    let category: String
+    let location: String
+    let priorityLevel: String
+}
